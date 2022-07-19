@@ -1,0 +1,30 @@
+.content {
+  position: relative;
+  min-height: 200px;
+  left: 10%;
+  width: 40%;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 1200px) {
+  .content {
+    width: 35%;
+  }
+}
+@media (max-width: 1024px) {
+  .content {
+    position: static;
+    max-width: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 480px) {
+}

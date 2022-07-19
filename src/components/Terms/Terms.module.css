@@ -1,0 +1,71 @@
+.btn-container {
+  margin-top: 65px;
+  margin-left: 9%;
+  height: 100px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  color: var(--color-text);
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: transparent;
+  transition: all 150ms;
+  border-radius: 50rem;
+  border: 1px solid var(--color-text);
+}
+
+.btn:hover {
+  background-color: var(--color-bg-light);
+  cursor: pointer;
+  padding: 11.5px 24px;
+}
+
+.content {
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 50px;
+  margin-bottom: 250px;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  margin-left: -20px;
+}
+
+.icon {
+  margin-top: 30px;
+  font-size: 30px;
+  transition: all 185ms;
+}
+
+.icon:hover {
+  font-size: 37px;
+}
+
+a:link {
+  color: var(--color-text);
+  display: block;
+}
+
+a:visited {
+  color: var(--color-text);
+}
+
+a:hover,
+a:active {
+  color: rgb(1, 6, 24);
+  transition: var(--transition);
+  font-size: 20px;
+}

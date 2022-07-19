@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { Fragment } from "react";
+import { Routes, Route } from "react-router-dom";
+import PrimaryPage from "./pages/PrimaryPage";
+import MyHistory from "./pages/MyHistory";
+import TermsPage from "./pages/TermsPage";
+import TermsPageEN from "./pages/TermsPageEN";
+import ScrollToTop from "./pages/ScrollToTop";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <ScrollToTop>
+        <Routes>
+          <Route exact path="/" element={<PrimaryPage />} />
+          <Route path="/myhistory" element={<MyHistory />} />
+          <Route path="/terms" element={<TermsPage />} />
+          <Route path="/termsEN" element={<TermsPageEN />} />
+          <Route path="*" element={<PrimaryPage />} />
+        </Routes>
+      </ScrollToTop>
+    </Fragment>
   );
 }
 

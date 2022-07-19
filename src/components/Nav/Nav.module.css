@@ -1,0 +1,84 @@
+.navBar {
+  display: flex;
+  font-size: 18px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.navBar a {
+  color: var(--color-text);
+}
+
+.navBar a:hover,
+.navBar a:active {
+  color: var(--color-primary);
+  transition: var(--transition);
+  font-size: 18px;
+}
+
+.name {
+  width: 250px;
+}
+
+.name a:hover {
+  color: var(--color-bg-dark);
+}
+
+.list-links {
+  display: flex;
+  width: 820px;
+  gap: 20px;
+}
+
+.icons-container {
+  display: flex;
+  gap: 15px;
+}
+
+.icons {
+  font-size: 24px;
+}
+
+.dropDown {
+  display: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  transition: var(--transition);
+}
+
+.dropDown:hover {
+  background-color: rgb(237, 238, 238);
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .list-links {
+    display: none;
+  }
+  .icons-container {
+    display: none;
+  }
+  .dropDown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navBar {
+    gap: 50%;
+  }
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 768px) {
+  .navBar {
+    gap: 25%;
+  }
+}
+@media (max-width: 480px) {
+  .navBar {
+    gap: 15%;
+  }
+}

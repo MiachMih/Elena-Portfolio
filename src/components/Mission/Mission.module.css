@@ -1,0 +1,156 @@
+.container {
+  margin-top: 50px;
+  margin-bottom: 70px;
+  display: flex;
+  gap: 10%;
+  justify-content: flex-end;
+}
+
+.photo1 {
+  max-width: 200px;
+  height: auto;
+}
+
+.photo2 {
+  max-width: 145px;
+  height: auto;
+  margin-left: 115px;
+  margin-top: -55px;
+}
+
+.photos {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  width: 45%;
+  margin-top: 20px;
+  margin-right: 45px;
+}
+
+.content h2 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.content p {
+  margin-bottom: 15px;
+}
+
+.paragraph {
+  margin-bottom: 30px;
+}
+
+.content h3 {
+  color: var(--color-primary);
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.content ul > li {
+  text-indent: -38.83px;
+  margin-bottom: 15px;
+}
+
+.content ul > li:before {
+  content: "-";
+  padding-right: 30px;
+}
+
+.content ul {
+  margin-bottom: 30px;
+}
+
+.video {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  gap: 10px;
+}
+
+.video a {
+  color: var(--color-primary);
+  transition: var(--transition);
+}
+
+.video a:hover {
+  color: var(--color-text);
+}
+
+.icon {
+  font-size: 45px;
+  color: var(--color-primary);
+  transition: var(--transition);
+}
+
+.icon svg {
+  vertical-align: top;
+}
+
+.icon a:link {
+  display: block;
+  height: 45px;
+}
+
+.icon:hover {
+  color: var(--color-text);
+}
+
+.text {
+  margin-bottom: 35px;
+}
+
+.btn {
+  padding: 15px 30px;
+  border-radius: 50px;
+  color: var(--color-white);
+  background-color: var(--color-text);
+  transition: var(--transition);
+  margin-top: 20px;
+  margin-bottom: 10px;
+  box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.4);
+}
+
+.btn:hover {
+  background-color: var(--color-primary);
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 768px) {
+  .photo2 {
+    max-width: min(200px, 28vw);
+    margin: 0;
+    margin-top: 75px;
+  }
+  .photo1 {
+    display: none;
+  }
+  .container {
+    gap: 85px;
+  }
+
+  .content {
+    width: 35%;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content {
+    width: 65%;
+    margin: 0;
+  }
+
+  .photo2 {
+    max-width: 200px;
+  }
+}
