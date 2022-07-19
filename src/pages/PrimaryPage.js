@@ -28,7 +28,7 @@ import Language from "../components/Language/Language";
 function PrimaryPage(props) {
   const RUS = true;
   const ENG = false;
-  const [lang, setLang] = useState(RUS);
+  const [lang, setLang] = useState(ENG);
 
   function switchLang() {
     setLang((state) => {
